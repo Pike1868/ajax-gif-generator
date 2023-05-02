@@ -3,6 +3,7 @@ async function getGif() {
     const searchTerm = $("#search").val();
     if (!searchTerm) {
       alert("Please enter a search term");
+      return;
     }
 
     const response = await axios.get(`http://api.giphy.com/v1/gifs/search`, {
