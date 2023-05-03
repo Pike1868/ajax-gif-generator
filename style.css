@@ -47,6 +47,7 @@ input {
   border: none;
   border-radius: 0.5em;
   font-weight: 600;
+  margin: 0.4em;
 }
 
 #search {
@@ -63,8 +64,20 @@ input {
   color: whitesmoke;
 }
 
-.gif{
+.gif {
   margin: 1em 0;
 }
 
+@media screen and (max-width: 600px) {
+  button {
+    display: flex;
+    margin: 1.5em 0;
+  }
 
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: inherit;
+    width: 40%;
+  }
+}
