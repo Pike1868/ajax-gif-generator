@@ -13,7 +13,7 @@ async function getGif() {
     });
 
     const randomIndex = Math.floor(Math.random() * 50);
-    $("#gifGrid").append(
+    $("#gifGrid").prepend(
       createGif(response.data.data[randomIndex].images.original.url)
     );
     $("#search").val("");
